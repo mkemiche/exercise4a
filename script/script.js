@@ -34,7 +34,7 @@ function check_username(username){
 
 function check_dob(dob){
     //this is one line
-    var reg = new RegExp(/(\d+)(-|\/)(\d+)(?:-|\/)(?:(\d+)\s+(\d+):(\d+)(?::(\d+))?(?:\.(\d+))?)?\);
+    var reg = new RegExp(/(\d+)(-|\/)(\d+)(?:-|\/)(?:(\d+)\s+(\d+):(\d+)(?::(\d+))?(?:\.(\d+))?)?/);
     var message ="";
     var someWrong = false;
     if(!reg.test(dob)){
